@@ -7,7 +7,7 @@ import CPUDetails from "./CPUDetails";
 import EditCPUForm from "./EditCPUForm";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const port = process.env.REACT_APP_BE_PORT;
+const port = process.env.REACT_APP_BE_PORT || 3005;
 console.log(port);
 const CPUInventory = () => {
   // contains the CPUs retrieved from the database.

@@ -11,7 +11,7 @@ app.use(cors());
 
 // initialize the server at the specified port.
 try {
-  app.listen(process.env.PORT || 3000, () => {
+  app.listen(process.env.PORT || 3005, () => {
     console.log(`Server is running.`);
   });
 } catch (error) {

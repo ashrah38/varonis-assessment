@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const port = process.env.REACT_APP_BE_PORT;
+const port = process.env.REACT_APP_BE_PORT || 3005;
 const InventoryTable = ({ tableHeaders, tableData, setTableData, setChosenItem }) => {
   const navigate = useNavigate();
 

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const port = process.env.REACT_APP_BE_PORT;
+const port = process.env.REACT_APP_BE_PORT || 3005;
 
 const CPUDetails = () => {
   const { id } = useParams();
